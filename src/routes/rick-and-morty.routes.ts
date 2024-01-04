@@ -14,6 +14,7 @@ const router = Router();
 */
 
 router.route("/handler-R-all-character").get(RickAndMorty.getAllCharacter); // Listamos todos los personajes de Rick And Morty
-router.route("/handler-R-human-character").get(RickAndMorty.getAllHumanCharacter); // Listamos todos los personajes de Rick And Morty
+router.route("/handler-R-human-character/:pageNumber").get(RickAndMorty.getAllHumanCharacter); // Listamos todos los personajes de Rick And Morty
+router.route("/handler-R-no-human-character/:pageNumber").get(RickAndMorty.getAllNoHumanCharacter); // Listamos todos los personajes de Rick And Morty
 
 export default router;

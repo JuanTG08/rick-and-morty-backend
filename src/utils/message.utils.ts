@@ -4,7 +4,7 @@ export const MessageUtils = (
   error: boolean,
   statusCode: number,
   message: string,
-  payload?: any
+  payload?: any | any[]
 ): iMessage => {
   return {
     error,
